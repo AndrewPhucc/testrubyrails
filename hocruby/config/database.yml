@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: phucdev # Thay 'postgres' bằng tên người dùng PostgreSQL của bạn
+  password: 123456 # Thay 'your_password' bằng mật khẩu PostgreSQL của bạn
+  host: localhost
+
+development:
+  <<: *default
+  database: mydatabase
+
+test:
+  <<: *default
+  database: hocruby_test
+
+production:
+  <<: *default
+  database: hocruby_production
+  username: hocruby
+  password: <%= ENV['HOCRUBY_DATABASE_PASSWORD'] %>

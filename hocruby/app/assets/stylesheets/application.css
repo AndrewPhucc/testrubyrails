@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none; /* Xóa dấu chấm */
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Hiệu ứng chuyển động */
+    display: flex;
+    justify-content: space-between;
+}
+
+li:hover {
+    transform: scale(1.02); /* Tăng kích thước một chút khi hover */
+}
+
+a {
+    text-decoration: none; /* Xóa gạch chân */
+    color: #007bff; /* Màu xanh dương cho liên kết */
+    font-weight: bold; /* Đậm chữ */
+}
+
+a:hover {
+    color: #0056b3; /* Màu xanh đậm hơn khi hover */
+}
+
+.delete-link {
+    color: #ff0000; /* Màu đỏ cho liên kết xóa */
+    font-weight: normal;
+    margin-left: 10px; /* Khoảng cách giữa tiêu đề và liên kết xóa */
+}
+
+.delete-link:hover {
+    color: #cc0000; /* Màu đỏ đậm hơn khi hover */
+}
+
+/* Styles for the form */
+.form-group {
+    margin-bottom: 15px; /* Khoảng cách giữa các trường */
+}
+
+.form-label {
+    display: block; /* Đặt nhãn thành khối */
+    font-weight: bold; /* Làm cho nhãn đậm */
+    margin-bottom: 5px; /* Khoảng cách giữa nhãn và trường nhập */
+}
+
+.form-control {
+    width: 100%; /* Đặt chiều rộng 100% cho trường nhập */
+    padding: 10px; /* Khoảng cách bên trong trường nhập */
+    border: 1px solid #ccc; /* Đường viền cho trường nhập */
+    border-radius: 4px; /* Bo góc cho trường nhập */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Đổ bóng cho trường nhập */
+}
+
+.btn {
+    padding: 10px 15px; /* Padding cho nút */
+    font-size: 16px; /* Kích thước chữ cho nút */
+    border: none; /* Không đường viền cho nút */
+    border-radius: 4px; /* Bo góc cho nút */
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua nút */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Màu nền cho nút chính */
+    color: white; /* Màu chữ cho nút chính */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Màu nền cho nút khi di chuột qua */
+}
+

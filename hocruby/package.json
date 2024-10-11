@@ -1,0 +1,10 @@
+{
+  "name": "hocruby",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "AndrewPhucc <phucle011232@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@rails/ujs": "^7.1.3-4"
+  }
+}
